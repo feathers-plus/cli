@@ -1,0 +1,58 @@
+{
+  "name": "feathers-plus-cli",
+  "description": "The command line interface for manage Feathers applications.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/feathers-x/feathers-plus-cli",
+  "main": "lib/",
+  "keywords": [
+    "feathers",
+    "feathers-plugin",
+    "feathers-plus",
+    "feathers-plus-cli",
+    "tests"
+  ],
+  "license": "Copyright. All rights reserved.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feathers-x/feathers-plus-cli.git"
+  },
+  "author": {
+    "name": "John J. Szwaronek",
+    "email": "johnsz9999@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/feathers-x/feathers-plus-cli/issues"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "scripts": {
+    "publish": "git push origin --tags && npm run changelog && git push origin",
+    "release:pre": "npm version prerelease && npm publish --tag pre",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
+    "lint": "semistandard lib/*.js lib/**/*.js test/*.js test/**/*.js --fix",
+    "mocha": "mocha --opts mocha.opts",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
+    "test": "npm run lint && npm run coverage"
+  },
+  "semistandard": {
+    "sourceType": "module",
+    "env": [
+      "mocha"
+    ]
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "3.5.0",
+    "istanbul": "1.1.0-alpha.1",
+    "mocha": "4.0.1",
+    "semistandard": "11.0.0"
+  }
+}
