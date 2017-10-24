@@ -1,8 +1,11 @@
 {
   "name": "feathers-plus-cli",
-  "description": "The command line interface for manage Feathers applications.",
+  "description": "The command line interface for managing Feathers applications.",
   "version": "0.0.0",
   "homepage": "https://github.com/feathers-x/feathers-plus-cli",
+  "bin": {
+    "feathers-plus": "./lib/index.js"
+  },
   "main": "lib/",
   "keywords": [
     "feathers",
@@ -48,7 +51,15 @@
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "2.3.0",
+    "clear": "0.0.1",
+    "clui": "0.3.6",
+    "commander": "2.11.0",
+    "figlet": "1.2.0",
+    "inquirer": "3.3.0",
+    "minimist": "1.2.0"
+  },
   "devDependencies": {
     "chai": "3.5.0",
     "istanbul": "1.1.0-alpha.1",
