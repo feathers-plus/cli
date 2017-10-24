@@ -1,5 +1,5 @@
 {
-  "name": "feathers-plus-cli",
+  "name": "@feathers-x/feathers-plus-cli",
   "description": "The command line interface for managing Feathers applications.",
   "version": "0.0.0",
   "homepage": "https://github.com/feathers-x/feathers-plus-cli",
@@ -32,10 +32,10 @@
   },
   "scripts": {
     "publish": "git push origin --tags && npm run changelog && git push origin",
-    "release:pre": "npm version prerelease && npm publish --tag pre",
-    "release:patch": "npm version patch && npm publish",
-    "release:minor": "npm version minor && npm publish",
-    "release:major": "npm version major && npm publish",
+    "release:pre": "npm version prerelease && npm publish --access restricted --tag pre",
+    "release:patch": "npm version patch && npm publish --access restricted",
+    "release:minor": "npm version minor && npm publish --access restricted",
+    "release:major": "npm version major && npm publish --access restricted",
     "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
     "lint": "semistandard lib/*.js lib/**/*.js test/*.js test/**/*.js --fix",
     "mocha": "mocha --opts mocha.opts",

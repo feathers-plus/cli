@@ -11,7 +11,7 @@
 ## Installation
 
 ```
-npm install feathers-plus-cli -g
+npm install -g feathers-plus-cli
 ```
 
 or fork the repository from GitHub and, **within that forked directory**, run
