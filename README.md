@@ -11,20 +11,12 @@
 ## Installation
 
 ```
-npm install -g feathers-plus-cli
-```
-
-or fork the repository from GitHub and, **within that forked directory**, run
-
-```
-npm link
+npm install -g @feathers-x/feathers-plus-cli
 ```
 
 ## Documentation
 
-Work in progress.
-
-Run `feathers-plus`.
+Command `feathers-plus audit` - Audits current project.
 
 ## Complete Example
 

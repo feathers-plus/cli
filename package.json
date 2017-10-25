@@ -6,6 +6,7 @@
   "bin": {
     "feathers-plus": "./lib/index.js"
   },
+  "preferGlobal": true,
   "main": "lib/",
   "keywords": [
     "feathers",
@@ -52,7 +53,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "@feathers-x/feathers-plus-cli-audit": "^0.0.8",
+    "@feathers-x/feathers-plus-cli-audit": "^0.0.9",
     "chalk": "2.3.0",
     "clear": "0.0.1",
     "clui": "0.3.6",
