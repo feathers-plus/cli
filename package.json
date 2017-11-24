@@ -52,7 +52,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "@feathers-x/cli-audit": "^0.0.0",
+    "@feathers-x/cli-audit": "^0.0.10",
     "chalk": "2.3.0",
     "clear": "0.0.1",
     "clui": "0.3.6",

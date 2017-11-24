@@ -1,4 +1,4 @@
-# feathers-plus-cli
+# @feathers-plus/cli
 
 [![Build Status](https://travis-ci.org/feathers-x/feathers-plus-cli.png?branch=master)](https://travis-ci.org/feathers-x/feathers-plus-cli)
 [![Code Climate](https://codeclimate.com/github/feathers-x/feathers-plus-cli/badges/gpa.svg)](https://codeclimate.com/github/feathers-x/feathers-plus-cli)
@@ -11,7 +11,7 @@
 ## Installation
 
 ```
-npm install -g @feathers-x/feathers-plus-cli
+npm install -g @feathers-x/cli
 ```
 
 ## Documentation
