@@ -40,7 +40,9 @@
     "lint": "semistandard lib/*.js lib/**/*.js test/*.js test/**/*.js --fix",
     "mocha": "mocha --opts mocha.opts",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
-    "test": "npm run lint && npm run coverage"
+    "test": "npm run lint && npm run coverage",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "semistandard": {
     "sourceType": "module",
@@ -66,6 +68,7 @@
     "chai": "3.5.0",
     "istanbul": "1.1.0-alpha.1",
     "mocha": "4.0.1",
-    "semistandard": "11.0.0"
+    "semistandard": "11.0.0",
+    "vuepress": "0.8.4"
   }
 }
