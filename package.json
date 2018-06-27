@@ -1,8 +1,8 @@
 {
-  "name": "@feathers-x/cli",
-  "description": "The command line interface for managing Feathers applications.",
-  "version": "0.1.8",
-  "homepage": "https://feathers-plus.github.io",
+  "name": "@feathers-plus/cli",
+  "description": "FeathersJS CLI supporting both REST and GraphQL architectural concepts and their query languages.",
+  "version": "0.2.0",
+  "homepage": "https://generator.feathers-plus.com/",
   "bin": {
     "feathers-plus": "./lib/index.js"
   },
@@ -10,14 +10,18 @@
   "main": "lib/",
   "keywords": [
     "feathers",
+    "featherjs",
     "feathers-plugin",
     "feathers-plus",
+    "cli",
+    "generator",
+    "graphql",
     "tests"
   ],
-  "license": "Copyright. All rights reserved.",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/feathers-x/cli.git"
+    "url": "git://github.com/feathers-plus/cli.git"
   },
   "author": {
     "name": "John J. Szwaronek",
@@ -25,24 +29,22 @@
   },
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/feathers-x/cli/issues"
+    "url": "https://github.com/feathers-plus/cli/issues"
   },
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 8.0.0"
   },
   "scripts": {
     "publishx": "git push origin --tags && npm run changelog && git push origin",
-    "release:pre": "npm version prerelease && npm publish --access restricted --tag pre",
-    "release:patch": "npm version patch && npm publish --access restricted",
-    "release:minor": "npm version minor && npm publish --access restricted",
-    "release:major": "npm version major && npm publish --access restricted",
+    "release:pre": "npm version prerelease && npm publish --access public --tag pre",
+    "release:patch": "npm version patch && npm publish --access public",
+    "release:minor": "npm version minor && npm publish --access public",
+    "release:major": "npm version major && npm publish --access public",
     "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
     "lint": "semistandard lib/*.js lib/**/*.js test/*.js test/**/*.js --fix",
     "mocha": "mocha --opts mocha.opts",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
-    "test": "npm run lint && npm run coverage",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "test": "npm run lint && npm run coverage"
   },
   "semistandard": {
     "sourceType": "module",
@@ -54,7 +56,8 @@
     "lib": "lib"
   },
   "dependencies": {
-    "@feathers-x/cli-audit": "^0.0.10",
+    "@feathers-plus/cli-audit": "^0.0.10",
+    "@feathers-plus/generator-feathers-plus": "^0.2.0",
     "chalk": "2.3.0",
     "clear": "0.0.1",
     "clui": "0.3.6",
@@ -68,7 +71,6 @@
     "chai": "3.5.0",
     "istanbul": "1.1.0-alpha.1",
     "mocha": "4.0.1",
-    "semistandard": "11.0.0",
-    "vuepress": "0.8.4"
+    "semistandard": "11.0.0"
   }
 }
