@@ -8,7 +8,7 @@
 npm install -g @feathers-plus/cli
 ```
 
-## Documentation
+## Usage
 
 Refer to the [documentation](https://generator.feathers-plus.com/).
 
