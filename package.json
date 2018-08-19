@@ -1,7 +1,7 @@
 {
   "name": "@feathers-plus/cli",
   "description": "FeathersJS CLI supporting both REST and GraphQL architectural concepts and their query languages.",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "homepage": "https://generator.feathers-plus.com/",
   "bin": {
     "feathers-plus": "./lib/index.js"
