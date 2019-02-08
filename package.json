@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "@feathers-plus/cli-audit": "^0.0.10",
-    "@feathers-plus/generator-feathers-plus": "0.6.77",
+    "@feathers-plus/generator-feathers-plus": "0.6.78",
     "chalk": "2.3.0",
     "clear": "0.0.1",
     "clui": "0.3.6",
