@@ -1,6 +1,8 @@
 # @feathers-plus/cli
 
-> FeathersJS CLI supporting both REST and GraphQL architectural concepts and their query languages.
+> __This project is no longer maintained__
+
+FeathersJS CLI supporting both REST and GraphQL architectural concepts and their query languages.
 
 ## Installation
 
